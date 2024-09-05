@@ -96,7 +96,7 @@ def new_chat():
             vector_store = FAISS.from_documents(text_chunks, embeddings)
             logger.info('Vector store created')
 
-            llm = CTransformers(model="C:/Users/smara/Desktop/pdf-chat-frontend/mistral-7b-instruct-v0.1.Q4_K_M.gguf",
+            llm = CTransformers(model="_path_to_your_model",
                                 config={'max_new_tokens': 500, 'temperature': 0.1})
             logger.info('Language model loaded')
 
